@@ -1,0 +1,14 @@
+name: 02210199 Workflow
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Run some command
+        run: 
+            echo "Hello World"
+            docker --version
+            docker ps -a
+            sudo apt update
+        
