@@ -5,9 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - name: Run a command
+      - name: Run some command
         run: 
             echo "Hello World"
             docker --version
             docker ps -a
+            sudo apt update
         
